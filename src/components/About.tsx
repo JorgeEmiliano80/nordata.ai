@@ -2,9 +2,9 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const About = () => {
   const stats = [
-    { number: "500+", label: "Projetos Completados" },
+    { number: "100+", label: "Projetos Completados" },
     { number: "98%", label: "Satisfação do Cliente" },
-    { number: "50+", label: "Empresas Transformadas" },
+    { number: "20+", label: "Empresas Transformadas" },
     { number: "24/7", label: "Suporte Disponível" }
   ];
 
@@ -17,13 +17,14 @@ const About = () => {
               Quem Somos?
             </h2>
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-              Somos uma equipe de especialistas em ciência de dados e inteligência artificial 
-              com mais de 10 anos de experiência transformando empresas através da inovação tecnológica.
+              Somos uma empresa que transforma dados em informação. 
+              Implementamos soluções personalizadas que ajudam em tomada de decisão
+              a partir do uso de dados.
             </p>
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              Nossa missão é democratizar o acesso a tecnologias avançadas, 
-              ajudando empresas de todos os portes a aproveitar o poder de seus dados 
-              para tomar decisões mais inteligentes e competitivas.
+              Nossa missão é projetar algoritmos e plataformas de IA
+              que revelam insights acionáveis, aprimoram a tomada de decisão e criam 
+              novas fontes de valor para nossos clientes, de maneira simples e com segurança.
             </p>
             
             <div className="grid grid-cols-2 gap-6">
@@ -56,25 +57,25 @@ const About = () => {
             
             <Card className="border-border/50 bg-card/50 backdrop-blur-sm hover:shadow-accent transition-all duration-300">
               <CardHeader>
-                <CardTitle className="text-accent">Nossos Valores</CardTitle>
+                <CardTitle className="text-accent">Nosso DNA</CardTitle>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2">
                   <li className="flex items-center">
                     <div className="w-2 h-2 bg-gradient-accent rounded-full mr-3"></div>
-                    <span className="text-muted-foreground">Inovação constante</span>
+                    <span className="text-muted-foreground">Inovação responsável</span>
                   </li>
                   <li className="flex items-center">
                     <div className="w-2 h-2 bg-gradient-accent rounded-full mr-3"></div>
-                    <span className="text-muted-foreground">Excelência no atendimento</span>
+                    <span className="text-muted-foreground">Perseverança, desafios e orientação a resultados</span>
                   </li>
                   <li className="flex items-center">
                     <div className="w-2 h-2 bg-gradient-accent rounded-full mr-3"></div>
-                    <span className="text-muted-foreground">Transparência total</span>
+                    <span className="text-muted-foreground">Inovação, curiosidade e criatividade</span>
                   </li>
                   <li className="flex items-center">
                     <div className="w-2 h-2 bg-gradient-accent rounded-full mr-3"></div>
-                    <span className="text-muted-foreground">Compromisso com resultados</span>
+                    <span className="text-muted-foreground">Aprendizagem continuo</span>
                   </li>
                 </ul>
               </CardContent>

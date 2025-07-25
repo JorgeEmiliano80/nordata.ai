@@ -1,5 +1,5 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import aiIcon from "@/assets/ai-icon.jpg";
+import starfly from "@/assets/starfly-icon.jpg";
 import analyticsIcon from "@/assets/analytics-icon.jpg";
 import mlIcon from "@/assets/ml-icon.jpg";
 
@@ -14,7 +14,7 @@ const Services = () => {
 
   const cases = [
     {
-      icon: aiIcon,
+      icon: starfly,
       company: "Starfly",
       sector: "Aviação Executiva",
       description: "A Starfly, empresa de passeios aéreos e venda de aviões, implementou nossa solução de monitoramento de dados e previsão de demanda.",
@@ -24,7 +24,7 @@ const Services = () => {
       icon: analyticsIcon,
       company: "EcoAutomotores",
       sector: "Setor Automotivo",
-      description: "Uma concessionária de automóveis, a Nordata auxiliou na integração e análise dos dados de vendas, estoque e segmentação de clientes.",
+      description: "Uma concessionária de automóveis, a Nordata auxiliou na integração e análise dos dados de vendas e segmentação de clientes.",
       results: "Com nossos modelos preditivos, EcoAutomotores passou a prever tendências de vendas por modelo com maior precisão e de forma proativa. A empresa direcionou campanhas personalizadas aos clientes certos e viu as vendas crescerem em decorrência de um melhor entendimento do comportamento do comprador."
     }
   ];

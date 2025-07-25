@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import heroWavesBg from "@/assets/hero-waves-bg.jpg";
+import heroWavesBg from "@/assets/fundoNovo.png";
 
 const Hero = () => {
   return (
@@ -10,7 +10,8 @@ const Hero = () => {
         backgroundImage: `linear-gradient(rgba(15, 15, 50, 0.8), rgba(255, 20, 147, 0.3)), url(${heroWavesBg})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
-        backgroundAttachment: 'fixed'
+        backgroundAttachment: 'fixed',
+        filter: "brightness(1.0)",
       }}
     >
       <div className="absolute inset-0 bg-gradient-hero opacity-90"></div>
@@ -29,8 +30,7 @@ const Hero = () => {
           </h1>
           
           <p className="text-xl md:text-2xl mb-8 text-primary-foreground/90 leading-relaxed">
-            Soluções avançadas de Inteligência Artificial e análise de dados 
-            para impulsionar o crescimento da sua empresa rumo ao futuro digital.
+            Soluções avançadas de Inteligência Artificial e Análise de Dados 
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
