@@ -5,31 +5,30 @@ const Header = () => {
     <header className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-border/50">
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
         <div className="flex items-center space-x-2">
-          <div className="w-8 h-8 bg-gradient-primary rounded-lg flex items-center justify-center">
-            <span className="text-primary-foreground font-bold text-lg">I</span>
-          </div>
-          <span className="font-bold text-xl bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-            IntelligentByte
-          </span>
+          <img 
+            src="/lovable-uploads/8b51a508-e5c4-42e6-a6fb-b1824152b97a.png" 
+            alt="NORDATA" 
+            className="h-8 w-auto"
+          />
         </div>
         
         <nav className="hidden md:flex items-center space-x-8">
           <a href="#inicio" className="text-foreground hover:text-primary transition-colors">
-            Inicio
+            Início
           </a>
-          <a href="#servicios" className="text-foreground hover:text-primary transition-colors">
-            Servicios
+          <a href="#plataforma" className="text-foreground hover:text-primary transition-colors">
+            Plataforma
           </a>
-          <a href="#nosotros" className="text-foreground hover:text-primary transition-colors">
-            Nosotros
+          <a href="#casos" className="text-foreground hover:text-primary transition-colors">
+            Casos de Sucesso
           </a>
-          <a href="#contacto" className="text-foreground hover:text-primary transition-colors">
-            Contacto
+          <a href="#contato" className="text-foreground hover:text-primary transition-colors">
+            Contato
           </a>
         </nav>
         
         <Button variant="hero" size="lg">
-          Comenzar
+          Começar
         </Button>
       </div>
     </header>

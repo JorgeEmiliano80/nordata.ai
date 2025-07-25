@@ -6,56 +6,56 @@ import { Label } from "@/components/ui/label";
 
 const Contact = () => {
   return (
-    <section id="contacto" className="py-20 bg-muted/30">
+    <section id="contato" className="py-20 bg-muted/30">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-            ¿Listo para Transformar tu Negocio?
+            Pronto para Transformar seu Negócio?
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Contáctanos hoy y descubre cómo podemos ayudarte a aprovechar 
-            el poder de los datos y la inteligencia artificial.
+            Entre em contato hoje e descubra como podemos ajudá-lo a aproveitar 
+            o poder dos dados e da inteligência artificial.
           </p>
         </div>
         
         <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
           <Card className="border-border/50 bg-card/50 backdrop-blur-sm">
             <CardHeader>
-              <CardTitle className="text-2xl text-primary">Envíanos un Mensaje</CardTitle>
+              <CardTitle className="text-2xl text-primary">Envie uma Mensagem</CardTitle>
             </CardHeader>
             <CardContent className="space-y-6">
               <div className="grid grid-cols-2 gap-4">
                 <div className="space-y-2">
-                  <Label htmlFor="nombre">Nombre</Label>
-                  <Input id="nombre" placeholder="Tu nombre" />
+                  <Label htmlFor="nome">Nome</Label>
+                  <Input id="nome" placeholder="Seu nome" />
                 </div>
                 <div className="space-y-2">
                   <Label htmlFor="empresa">Empresa</Label>
-                  <Input id="empresa" placeholder="Tu empresa" />
+                  <Input id="empresa" placeholder="Sua empresa" />
                 </div>
               </div>
               
               <div className="space-y-2">
                 <Label htmlFor="email">Email</Label>
-                <Input id="email" type="email" placeholder="tu@email.com" />
+                <Input id="email" type="email" placeholder="seu@email.com" />
               </div>
               
               <div className="space-y-2">
-                <Label htmlFor="telefono">Teléfono</Label>
-                <Input id="telefono" placeholder="+34 123 456 789" />
+                <Label htmlFor="telefone">Telefone</Label>
+                <Input id="telefone" placeholder="+55 11 99999-9999" />
               </div>
               
               <div className="space-y-2">
-                <Label htmlFor="mensaje">Mensaje</Label>
+                <Label htmlFor="mensagem">Mensagem</Label>
                 <Textarea 
-                  id="mensaje" 
-                  placeholder="Cuéntanos sobre tu proyecto y cómo podemos ayudarte..."
+                  id="mensagem" 
+                  placeholder="Conte-nos sobre seu projeto e como podemos ajudá-lo..."
                   rows={5}
                 />
               </div>
               
               <Button variant="hero" className="w-full" size="lg">
-                Enviar Mensaje
+                Enviar Mensagem
               </Button>
             </CardContent>
           </Card>
@@ -65,7 +65,7 @@ const Contact = () => {
               <CardHeader>
                 <CardTitle className="text-primary flex items-center">
                   <div className="w-3 h-3 bg-gradient-primary rounded-full mr-3"></div>
-                  Información de Contacto
+                  Informações de Contato
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
@@ -75,7 +75,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="font-semibold text-foreground">Email</p>
-                    <p className="text-muted-foreground">contacto@intelligentbyte.com</p>
+                    <p className="text-muted-foreground">contato@nordata.com</p>
                   </div>
                 </div>
                 
@@ -84,8 +84,8 @@ const Contact = () => {
                     <span className="text-accent-foreground text-sm">📱</span>
                   </div>
                   <div>
-                    <p className="font-semibold text-foreground">Teléfono</p>
-                    <p className="text-muted-foreground">+34 900 123 456</p>
+                    <p className="font-semibold text-foreground">Telefone</p>
+                    <p className="text-muted-foreground">+55 11 9999-8888</p>
                   </div>
                 </div>
                 
@@ -94,8 +94,8 @@ const Contact = () => {
                     <span className="text-primary-foreground text-sm">📍</span>
                   </div>
                   <div>
-                    <p className="font-semibold text-foreground">Oficina</p>
-                    <p className="text-muted-foreground">Madrid, España</p>
+                    <p className="font-semibold text-foreground">Escritório</p>
+                    <p className="text-muted-foreground">São Paulo, Brasil</p>
                   </div>
                 </div>
               </CardContent>
@@ -105,26 +105,26 @@ const Contact = () => {
               <CardHeader>
                 <CardTitle className="text-accent flex items-center">
                   <div className="w-3 h-3 bg-gradient-accent rounded-full mr-3"></div>
-                  ¿Por qué Elegirnos?
+                  Por que nos Escolher?
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-3">
                   <li className="flex items-center">
                     <div className="w-2 h-2 bg-gradient-secondary rounded-full mr-3"></div>
-                    <span className="text-muted-foreground">Consultoría gratuita inicial</span>
+                    <span className="text-muted-foreground">Consultoria gratuita inicial</span>
                   </li>
                   <li className="flex items-center">
                     <div className="w-2 h-2 bg-gradient-secondary rounded-full mr-3"></div>
-                    <span className="text-muted-foreground">Soluciones personalizadas</span>
+                    <span className="text-muted-foreground">Soluções personalizadas</span>
                   </li>
                   <li className="flex items-center">
                     <div className="w-2 h-2 bg-gradient-secondary rounded-full mr-3"></div>
-                    <span className="text-muted-foreground">Implementación rápida</span>
+                    <span className="text-muted-foreground">Implementação rápida</span>
                   </li>
                   <li className="flex items-center">
                     <div className="w-2 h-2 bg-gradient-secondary rounded-full mr-3"></div>
-                    <span className="text-muted-foreground">Soporte continuo</span>
+                    <span className="text-muted-foreground">Suporte contínuo</span>
                   </li>
                 </ul>
               </CardContent>

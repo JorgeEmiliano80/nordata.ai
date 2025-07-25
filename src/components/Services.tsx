@@ -4,76 +4,99 @@ import analyticsIcon from "@/assets/analytics-icon.jpg";
 import mlIcon from "@/assets/ml-icon.jpg";
 
 const Services = () => {
-  const services = [
+  const platformContent = {
+    title: "Nossa Plataforma e Como Geramos Valor",
+    description: "Nossa plataforma de processamento de dados e inteligência artificial foi concebida para entregar valor de ponta a ponta. Projetamos algoritmos e ferramentas de IA que revelam insights acionáveis, aprimoram decisões e criam novas fontes de valor – tudo com simplicidade e segurança de ponta a ponta.",
+    details: "Em termos práticos, isso significa que a Nordata cuida de todo o fluxo de dados: desde a coleta e integração de diferentes fontes, passando pelo processamento e análise avançada (incluindo modelos de machine learning), até a visualização de resultados em painéis intuitivos.",
+    advantages: "Privilegiamos a simplicidade de uso – mesmo organizações sem grande equipe técnica podem se beneficiar – e a segurança dos dados, assegurando compliance e privacidade em cada etapa. Nosso diferencial está em tornar a IA acessível: com módulos prontos e personalizáveis, as empresas conseguem rapidamente implantar soluções de análise preditiva, detecção de anomalias, otimização de processos e muito mais, sem precisar reinventar a roda.",
+    results: "Tudo isso sustentado por nossa experiência e DNA inovador, garantindo que as soluções não sejam apenas tecnicamente robustas, mas também alinhadas aos objetivos de negócio de cada cliente. O resultado? Decisões melhor informadas, redução de custos, aumento de receitas e identificação de oportunidades antes invisíveis – enfim, dados transformados em vantagens competitivas para nossos clientes."
+  };
+
+  const cases = [
     {
       icon: aiIcon,
-      title: "Inteligencia Artificial",
-      description: "Desarrollamos soluciones de IA personalizadas que automatizan procesos y mejoran la toma de decisiones empresariales.",
-      features: ["Procesamiento de Lenguaje Natural", "Visión por Computadora", "Automatización Inteligente", "Chatbots Avanzados"]
+      company: "Starfly",
+      sector: "Aviação Executiva",
+      description: "A Starfly, empresa de passeios aéreos e venda de aviões, implementou nossa solução de monitoramento de dados e previsão de demanda.",
+      results: "Otimizaram suas rotas e agendas de voos, aumentando a taxa de ocupação e reduzindo custos operacionais. A análise de dados de manutenção preditiva permitiu antecipar necessidades de serviço nas aeronaves, diminuindo o tempo de solo e melhorando a segurança."
     },
     {
       icon: analyticsIcon,
-      title: "Análisis de Datos",
-      description: "Convertimos tus datos en insights accionables mediante técnicas avanzadas de análisis y visualización.",
-      features: ["Dashboards Interactivos", "Análisis Predictivo", "KPIs Personalizados", "Reportes Automatizados"]
-    },
-    {
-      icon: mlIcon,
-      title: "Machine Learning",
-      description: "Implementamos modelos de aprendizaje automático que aprenden y se adaptan para optimizar tus operaciones.",
-      features: ["Modelos Predictivos", "Clasificación de Datos", "Sistemas de Recomendación", "Detección de Anomalías"]
+      company: "EcoAutomotores",
+      sector: "Setor Automotivo",
+      description: "Uma concessionária de automóveis, a Nordata auxiliou na integração e análise dos dados de vendas, estoque e segmentação de clientes.",
+      results: "Com nossos modelos preditivos, EcoAutomotores passou a prever tendências de vendas por modelo com maior precisão e de forma proativa. A empresa direcionou campanhas personalizadas aos clientes certos e viu as vendas crescerem em decorrência de um melhor entendimento do comportamento do comprador."
     }
   ];
 
   return (
-    <section id="servicios" className="py-20 bg-muted/30">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-            Nuestros Servicios
-          </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Ofrecemos soluciones tecnológicas de vanguardia para transformar tu negocio 
-            con el poder de los datos y la inteligencia artificial.
-          </p>
+    <>
+      {/* Nossa Plataforma Section */}
+      <section id="plataforma" className="py-20 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+              {platformContent.title}
+            </h2>
+            <div className="max-w-4xl mx-auto text-lg text-muted-foreground space-y-6">
+              <p>{platformContent.description}</p>
+              <p>{platformContent.details}</p>
+              <p>{platformContent.advantages}</p>
+              <p>{platformContent.results}</p>
+            </div>
+          </div>
         </div>
-        
-        <div className="grid md:grid-cols-3 gap-8">
-          {services.map((service, index) => (
-            <Card 
-              key={index} 
-              className="group hover:shadow-glow transition-all duration-500 hover:scale-105 border-border/50 bg-card/50 backdrop-blur-sm"
-            >
-              <CardHeader className="text-center">
-                <div className="mx-auto mb-4 p-4 bg-gradient-primary rounded-2xl w-20 h-20 flex items-center justify-center group-hover:animate-pulse-glow">
-                  <img 
-                    src={service.icon} 
-                    alt={service.title}
-                    className="w-12 h-12 object-cover rounded-lg filter brightness-0 invert"
-                  />
-                </div>
-                <CardTitle className="text-2xl mb-2 text-primary group-hover:text-accent transition-colors">
-                  {service.title}
-                </CardTitle>
-                <CardDescription className="text-muted-foreground">
-                  {service.description}
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-2">
-                  {service.features.map((feature, featureIndex) => (
-                    <li key={featureIndex} className="flex items-center text-sm">
-                      <div className="w-2 h-2 bg-gradient-secondary rounded-full mr-3 flex-shrink-0"></div>
-                      <span className="text-foreground">{feature}</span>
-                    </li>
-                  ))}
-                </ul>
-              </CardContent>
-            </Card>
-          ))}
+      </section>
+
+      {/* Casos de Sucesso Section */}
+      <section id="casos" className="py-20 bg-background">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+              Casos de Sucesso de Clientes
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              Para ilustrar o impacto da Nordata, destacamos alguns clientes que alavancaram seus dados com nossa plataforma:
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            {cases.map((case_, index) => (
+              <Card 
+                key={index} 
+                className="group hover:shadow-glow transition-all duration-500 hover:scale-105 border-border/50 bg-card/50 backdrop-blur-sm"
+              >
+                <CardHeader>
+                  <div className="flex items-center gap-4 mb-4">
+                    <div className="p-3 bg-gradient-primary rounded-2xl w-16 h-16 flex items-center justify-center group-hover:animate-pulse-glow">
+                      <img 
+                        src={case_.icon} 
+                        alt={case_.company}
+                        className="w-8 h-8 object-cover rounded-lg filter brightness-0 invert"
+                      />
+                    </div>
+                    <div>
+                      <CardTitle className="text-2xl text-primary group-hover:text-accent transition-colors">
+                        {case_.company}
+                      </CardTitle>
+                      <p className="text-sm text-secondary font-medium">{case_.sector}</p>
+                    </div>
+                  </div>
+                  <CardDescription className="text-muted-foreground mb-4">
+                    {case_.description}
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <div className="border-l-4 border-gradient-secondary pl-4">
+                    <p className="text-foreground leading-relaxed">{case_.results}</p>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 };
 
