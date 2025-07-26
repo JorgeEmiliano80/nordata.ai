@@ -34,10 +34,25 @@ const Hero = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button variant="glow" size="lg" className="text-lg px-8 py-4">
+            <Button 
+              variant="glow" 
+              size="lg" 
+              className="text-lg px-8 py-4 shadow-glow hover:shadow-primary transition-all duration-300"
+              onClick={() => {
+                // Link para plataforma será adicionado aqui
+                console.log('Navegar para plataforma');
+              }}
+            >
               Descubra nossa plataforma
             </Button>
-            <Button variant="outline" size="lg" className="text-lg px-8 py-4">
+            <Button 
+              variant="outline" 
+              size="lg" 
+              className="text-lg px-8 py-4 border-primary/30 hover:border-primary hover:bg-primary/10 transition-all duration-300"
+              onClick={() => {
+                document.getElementById('casos')?.scrollIntoView({ behavior: 'smooth' });
+              }}
+            >
               Ver casos de sucesso
             </Button>
           </div>

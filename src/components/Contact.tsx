@@ -54,7 +54,31 @@ const Contact = () => {
                 />
               </div>
               
-              <Button variant="hero" className="w-full" size="lg">
+              <Button 
+                variant="hero" 
+                className="w-full shadow-glow hover:shadow-primary transition-all duration-300" 
+                size="lg"
+                onClick={(e) => {
+                  e.preventDefault();
+                  const nome = (document.getElementById('nome') as HTMLInputElement)?.value;
+                  const empresa = (document.getElementById('empresa') as HTMLInputElement)?.value;
+                  const email = (document.getElementById('email') as HTMLInputElement)?.value;
+                  const telefone = (document.getElementById('telefone') as HTMLInputElement)?.value;
+                  const mensagem = (document.getElementById('mensagem') as HTMLTextAreaElement)?.value;
+                  
+                  if (!nome || !email || !mensagem) {
+                    alert('Por favor, preencha todos os campos obrigatórios.');
+                    return;
+                  }
+                  
+                  // Criar link mailto com as informações
+                  const subject = `Contato de ${nome} - ${empresa || 'Sem empresa'}`;
+                  const body = `Nome: ${nome}\nEmpresa: ${empresa || 'Não informado'}\nEmail: ${email}\nTelefone: ${telefone || 'Não informado'}\n\nMensagem:\n${mensagem}`;
+                  const mailtoLink = `mailto:jorgeemiliano80@icloud.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+                  
+                  window.location.href = mailtoLink;
+                }}
+              >
                 Enviar mensagem
               </Button>
             </CardContent>
