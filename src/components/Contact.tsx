@@ -49,7 +49,7 @@ const Contact = () => {
                 <Label htmlFor="mensagem">Mensagem</Label>
                 <Textarea 
                   id="mensagem" 
-                  placeholder="Conte-nos sobre seu projeto e como podemos ajudá-lo..."
+                  placeholder="Conte-nos sobre seu projeto e como podemos ajudá-lo."
                   rows={5}
                 />
               </div>
@@ -94,7 +94,7 @@ const Contact = () => {
                     <span className="text-primary-foreground text-sm">📍</span>
                   </div>
                   <div>
-                    <p className="font-semibold text-foreground">Escritório</p>
+                    <p className="font-semibold text-foreground">localização</p>
                     <p className="text-muted-foreground">Foz do Iguaçu - PR, Brasil /  Ciudad Autónoma de Buenos Aires, Argentina</p>
                   </div>
                 </div>
