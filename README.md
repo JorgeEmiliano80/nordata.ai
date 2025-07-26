@@ -52,7 +52,7 @@ Simply open [Lovable](https://lovable.dev/projects/7248f01a-769c-440a-a5dd-d7da4
 
 ## Can I connect a custom domain to my Lovable project?
 
-Yes, you can!
+Yes, you can!!
 
 To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
 
