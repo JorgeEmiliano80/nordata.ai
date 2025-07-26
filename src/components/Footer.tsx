@@ -12,7 +12,7 @@ const Footer = () => {
               />
             </div>
             <p className="text-primary-foreground/80 text-sm">
-              Soluções avançadas de IA e Data Analytics
+              Soluções avançadas de IA e data analytics
             </p>
           </div>
           
@@ -29,9 +29,9 @@ const Footer = () => {
           <div>
             <h3 className="font-bold mb-4 text-accent">Empresa</h3>
             <ul className="space-y-2 text-sm">
-              <li><a href="#casos" className="text-primary-foreground/80 hover:text-accent transition-colors">Casos de Sucesso</a></li>
+              <li><a href="#casos" className="text-primary-foreground/80 hover:text-accent transition-colors">Casos de sucesso</a></li>
               <li><a href="#contato" className="text-primary-foreground/80 hover:text-accent transition-colors">Contato</a></li>
-              <li><a href="#" className="text-primary-foreground/80 hover:text-accent transition-colors">Sobre Nós</a></li>
+              <li><a href="#" className="text-primary-foreground/80 hover:text-accent transition-colors">Sobre nós</a></li>
               <li><a href="#" className="text-primary-foreground/80 hover:text-accent transition-colors">Blog</a></li>
             </ul>
           </div>
@@ -41,7 +41,7 @@ const Footer = () => {
             <ul className="space-y-2 text-sm">
               <li className="text-primary-foreground/80">📧 jorgeemiliano80@icloud.com</li>
               <li className="text-primary-foreground/80">📱 +55 45 9913-58484</li>
-              <li className="text-primary-foreground/80">📍 Foz do Iguaçú, Brasil</li>
+              <li className="text-primary-foreground/80">📍 Foz do Iguaçu, Brasil</li>
               <li className="text-primary-foreground/80">📍 CABA, Argentina</li>
             </ul>
           </div>

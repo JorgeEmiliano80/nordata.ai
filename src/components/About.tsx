@@ -2,10 +2,10 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const About = () => {
   const stats = [
-    { number: "100+", label: "Projetos Completados" },
-    { number: "98%", label: "Satisfação do Cliente" },
-    { number: "20+", label: "Empresas Transformadas" },
-    { number: "24/7", label: "Suporte Disponível" }
+    { number: "100+", label: "Projetos completados" },
+    { number: "98%", label: "Satisfação do cliente" },
+    { number: "20+", label: "Empresas transformadas" },
+    { number: "24/7", label: "Suporte disponível" }
   ];
 
   return (
@@ -14,7 +14,7 @@ const About = () => {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
             <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-              Quem Somos?
+              Quem somos?
             </h2>
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
               Somos uma empresa que transforma dados em informação. 
@@ -44,7 +44,7 @@ const About = () => {
           <div className="space-y-6">
             <Card className="border-border/50 bg-card/50 backdrop-blur-sm hover:shadow-primary transition-all duration-300">
               <CardHeader>
-                <CardTitle className="text-primary">Nossa Visão</CardTitle>
+                <CardTitle className="text-primary">Nossa visão</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">

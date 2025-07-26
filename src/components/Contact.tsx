@@ -10,7 +10,7 @@ const Contact = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-            Pronto para Transformar seu Negócio?
+            Pronto para transformar seu negócio?
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Entre em contato hoje e descubra como podemos ajudá-lo a aproveitar 
@@ -21,7 +21,7 @@ const Contact = () => {
         <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
           <Card className="border-border/50 bg-card/50 backdrop-blur-sm">
             <CardHeader>
-              <CardTitle className="text-2xl text-primary">Envie uma Mensagem</CardTitle>
+              <CardTitle className="text-2xl text-primary">Envie uma mensagem</CardTitle>
             </CardHeader>
             <CardContent className="space-y-6">
               <div className="grid grid-cols-2 gap-4">
@@ -36,7 +36,7 @@ const Contact = () => {
               </div>
               
               <div className="space-y-2">
-                <Label htmlFor="email">Email</Label>
+                <Label htmlFor="email">E-mail</Label>
                 <Input id="email" type="email" placeholder="seu@email.com" />
               </div>
               
@@ -55,7 +55,7 @@ const Contact = () => {
               </div>
               
               <Button variant="hero" className="w-full" size="lg">
-                Enviar Mensagem
+                Enviar mensagem
               </Button>
             </CardContent>
           </Card>
@@ -65,7 +65,7 @@ const Contact = () => {
               <CardHeader>
                 <CardTitle className="text-primary flex items-center">
                   <div className="w-3 h-3 bg-gradient-primary rounded-full mr-3"></div>
-                  Informações de Contato
+                  Informações de contato
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
@@ -74,7 +74,7 @@ const Contact = () => {
                     <span className="text-secondary-foreground text-sm">📧</span>
                   </div>
                   <div>
-                    <p className="font-semibold text-foreground">Email</p>
+                    <p className="font-semibold text-foreground">E-mail</p>
                     <p className="text-muted-foreground">jorgeemiliano80@icloud.com</p>
                   </div>
                 </div>
@@ -95,7 +95,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="font-semibold text-foreground">Escritório</p>
-                    <p className="text-muted-foreground">Foz do Iguaçú - PR, Brasil / Ciudad Autónoma de Buenos Aires, Argentina</p>
+                    <p className="text-muted-foreground">Foz do Iguaçu - PR, Brasil /  Ciudad Autónoma de Buenos Aires, Argentina</p>
                   </div>
                 </div>
               </CardContent>
@@ -105,14 +105,14 @@ const Contact = () => {
               <CardHeader>
                 <CardTitle className="text-accent flex items-center">
                   <div className="w-3 h-3 bg-gradient-accent rounded-full mr-3"></div>
-                  Por que nos Escolher?
+                  Por que nos escolher?
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-3">
                   <li className="flex items-center">
                     <div className="w-2 h-2 bg-gradient-secondary rounded-full mr-3"></div>
-                    <span className="text-muted-foreground">Consultoria gratuita inicial</span>
+                    <span className="text-muted-foreground">Consultoria</span>
                   </li>
                   <li className="flex items-center">
                     <div className="w-2 h-2 bg-gradient-secondary rounded-full mr-3"></div>

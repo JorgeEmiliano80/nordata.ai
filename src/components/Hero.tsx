@@ -21,24 +21,24 @@ const Hero = () => {
           <h1 className="text-5xl md:text-7xl font-bold mb-6 text-primary-foreground">
             Transformamos{" "}
             <span className="bg-gradient-to-r from-secondary to-highlight bg-clip-text text-transparent">
-              Dados
+              dados
             </span>{" "}
             em{" "}
             <span className="bg-gradient-to-r from-accent to-secondary bg-clip-text text-transparent">
-              Inteligência
+              inteligência
             </span>
           </h1>
           
           <p className="text-xl md:text-2xl mb-8 text-primary-foreground/90 leading-relaxed">
-            Soluções avançadas de Inteligência Artificial e Análise de Dados 
+            Soluções avançadas de inteligência artificial e análise de dados 
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button variant="glow" size="lg" className="text-lg px-8 py-4">
-              Descubra Nossa Plataforma
+              Descubra nossa plataforma
             </Button>
             <Button variant="outline" size="lg" className="text-lg px-8 py-4">
-              Ver Casos de Sucesso
+              Ver casos de sucesso
             </Button>
           </div>
         </div>

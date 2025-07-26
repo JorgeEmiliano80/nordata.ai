@@ -5,7 +5,7 @@ import mlIcon from "@/assets/ml-icon.jpg";
 
 const Services = () => {
   const platformContent = {
-    title: "Nossa Plataforma e Como Geramos Valor",
+    title: "Nossa plataforma e como geramos galor",
     description: "Nossa plataforma de processamento de dados e inteligência artificial foi concebida para entregar valor de ponta a ponta. Projetamos algoritmos e ferramentas de IA que revelam insights acionáveis, aprimoram decisões e criam novas fontes de valor – tudo com simplicidade e segurança de ponta a ponta.",
     details: "Em termos práticos, isso significa que a Nordata cuida de todo o fluxo de dados: desde a coleta e integração de diferentes fontes, passando pelo processamento e análise avançada (incluindo modelos de machine learning), até a visualização de resultados em painéis intuitivos.",
     advantages: "Privilegiamos a simplicidade de uso – mesmo organizações sem grande equipe técnica podem se beneficiar – e a segurança dos dados, assegurando compliance e privacidade em cada etapa. Nosso diferencial está em tornar a IA acessível: com módulos prontos e personalizáveis, as empresas conseguem rapidamente implantar soluções de análise preditiva, detecção de anomalias, otimização de processos e muito mais, sem precisar reinventar a roda.",
@@ -16,15 +16,15 @@ const Services = () => {
     {
       icon: starfly,
       company: "Starfly",
-      sector: "Aviação Executiva",
+      sector: "Aviação executiva",
       description: "A Starfly, empresa de passeios aéreos e venda de aviões, implementou nossa solução de monitoramento de dados e previsão de demanda.",
       results: "Otimizaram suas rotas e agendas de voos, aumentando a taxa de ocupação e reduzindo custos operacionais. A análise de dados de manutenção preditiva permitiu antecipar necessidades de serviço nas aeronaves, diminuindo o tempo de solo e melhorando a segurança."
     },
     {
       icon: analyticsIcon,
       company: "EcoAutomotores",
-      sector: "Setor Automotivo",
-      description: "Uma concessionária de automóveis, a Nordata auxiliou na integração e análise dos dados de vendas e segmentação de clientes.",
+      sector: "Setor automotivo",
+      description: "Uma concessionária de automóveis, onde a Nordata auxiliou na integração e análise dos dados de vendas e segmentação de clientes.",
       results: "Com nossos modelos preditivos, EcoAutomotores passou a prever tendências de vendas por modelo com maior precisão e de forma proativa. A empresa direcionou campanhas personalizadas aos clientes certos e viu as vendas crescerem em decorrência de um melhor entendimento do comportamento do comprador."
     }
   ];
@@ -53,7 +53,7 @@ const Services = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-              Casos de Sucesso de Clientes
+              Casos de sucesso de clientes
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               Para ilustrar o impacto da Nordata, destacamos alguns clientes que alavancaram seus dados com nossa plataforma:
