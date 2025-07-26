@@ -3,8 +3,64 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
+import { supabase } from "@/integrations/supabase/client";
+import { useState } from "react";
 
 const Contact = () => {
+  const [loading, setLoading] = useState(false);
+  
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setLoading(true);
+    
+    const nome = (document.getElementById('nome') as HTMLInputElement)?.value;
+    const empresa = (document.getElementById('empresa') as HTMLInputElement)?.value;
+    const email = (document.getElementById('email') as HTMLInputElement)?.value;
+    const telefone = (document.getElementById('telefone') as HTMLInputElement)?.value;
+    const mensagem = (document.getElementById('mensagem') as HTMLTextAreaElement)?.value;
+    
+    if (!nome || !email || !mensagem) {
+      alert('Por favor, preencha todos os campos obrigatórios.');
+      setLoading(false);
+      return;
+    }
+    
+    try {
+      // Save to database
+      const { error } = await supabase.from('contact_submissions').insert({
+        nome,
+        empresa: empresa || null,
+        email,
+        telefone: telefone || null,
+        mensagem
+      });
+      
+      if (error) {
+        console.error('Erro ao salvar no banco:', error);
+      }
+      
+      // Send email
+      const subject = `Contato de ${nome} - ${empresa || 'Sem empresa'}`;
+      const body = `Nome: ${nome}\nEmpresa: ${empresa || 'Não informado'}\nEmail: ${email}\nTelefone: ${telefone || 'Não informado'}\n\nMensagem:\n${mensagem}`;
+      const mailtoLink = `mailto:jorgeemiliano80@icloud.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      
+      window.location.href = mailtoLink;
+      
+      // Clear form
+      (document.getElementById('nome') as HTMLInputElement).value = '';
+      (document.getElementById('empresa') as HTMLInputElement).value = '';
+      (document.getElementById('email') as HTMLInputElement).value = '';
+      (document.getElementById('telefone') as HTMLInputElement).value = '';
+      (document.getElementById('mensagem') as HTMLTextAreaElement).value = '';
+      
+    } catch (error) {
+      console.error('Erro:', error);
+      alert('Erro ao enviar mensagem. Tente novamente.');
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
     <section id="contato" className="py-20 bg-muted/30">
       <div className="container mx-auto px-4">
@@ -58,28 +114,10 @@ const Contact = () => {
                 variant="hero" 
                 className="w-full shadow-glow hover:shadow-primary transition-all duration-300" 
                 size="lg"
-                onClick={(e) => {
-                  e.preventDefault();
-                  const nome = (document.getElementById('nome') as HTMLInputElement)?.value;
-                  const empresa = (document.getElementById('empresa') as HTMLInputElement)?.value;
-                  const email = (document.getElementById('email') as HTMLInputElement)?.value;
-                  const telefone = (document.getElementById('telefone') as HTMLInputElement)?.value;
-                  const mensagem = (document.getElementById('mensagem') as HTMLTextAreaElement)?.value;
-                  
-                  if (!nome || !email || !mensagem) {
-                    alert('Por favor, preencha todos os campos obrigatórios.');
-                    return;
-                  }
-                  
-                  // Criar link mailto com as informações
-                  const subject = `Contato de ${nome} - ${empresa || 'Sem empresa'}`;
-                  const body = `Nome: ${nome}\nEmpresa: ${empresa || 'Não informado'}\nEmail: ${email}\nTelefone: ${telefone || 'Não informado'}\n\nMensagem:\n${mensagem}`;
-                  const mailtoLink = `mailto:jorgeemiliano80@icloud.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-                  
-                  window.location.href = mailtoLink;
-                }}
+                onClick={handleSubmit}
+                disabled={loading}
               >
-                Enviar mensagem
+                {loading ? 'Enviando...' : 'Enviar mensagem'}
               </Button>
             </CardContent>
           </Card>

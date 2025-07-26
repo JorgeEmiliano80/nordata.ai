@@ -39,21 +39,11 @@ const Hero = () => {
               size="lg" 
               className="text-lg px-8 py-4 shadow-glow hover:shadow-primary transition-all duration-300"
               onClick={() => {
-                // Link para plataforma será adicionado aqui
-                console.log('Navegar para plataforma');
+                // Link para plataforma - configurado para adicionar link posteriormente
+                window.open('#', '_blank');
               }}
             >
               Descubra nossa plataforma
-            </Button>
-            <Button 
-              variant="outline" 
-              size="lg" 
-              className="text-lg px-8 py-4 border-primary/30 hover:border-primary hover:bg-primary/10 transition-all duration-300"
-              onClick={() => {
-                document.getElementById('casos')?.scrollIntoView({ behavior: 'smooth' });
-              }}
-            >
-              Ver casos de sucesso
             </Button>
           </div>
         </div>
