@@ -1,20 +1,19 @@
 import { Button } from "@/components/ui/button";
-import heroWavesBg from "@/assets/fundoNovo.png";
+import heroFuturisticBg from "@/assets/hero-futuristic-bg.jpg";
 
 const Hero = () => {
   return (
     <section 
       id="inicio"
-      className="min-h-screen flex items-center justify-center relative overflow-hidden"
+      className="min-h-screen flex items-center justify-center relative overflow-hidden bg-primary"
       style={{
-        backgroundImage: `linear-gradient(rgba(15, 15, 50, 0.8), rgba(255, 20, 147, 0.3)), url(${heroWavesBg})`,
+        backgroundImage: `linear-gradient(rgba(15, 15, 50, 0.95), rgba(255, 20, 147, 0.1)), url(${heroFuturisticBg})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundAttachment: 'fixed',
-        filter: "brightness(1.0)",
       }}
     >
-      <div className="absolute inset-0 bg-gradient-hero opacity-90"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-primary via-primary/80 to-primary/60"></div>
       
       <div className="container mx-auto px-4 relative z-10 text-center">
         <div className="max-w-4xl mx-auto animate-slide-in">
@@ -48,10 +47,10 @@ const Hero = () => {
           </div>
         </div>
         
-        {/* Floating elements */}
-        <div className="absolute top-20 left-10 w-20 h-20 bg-secondary/20 rounded-full animate-float"></div>
-        <div className="absolute bottom-20 right-10 w-16 h-16 bg-accent/20 rounded-full animate-float" style={{animationDelay: '2s'}}></div>
-        <div className="absolute top-1/2 right-20 w-12 h-12 bg-highlight/20 rounded-full animate-float" style={{animationDelay: '4s'}}></div>
+        {/* Geometric decorative elements */}
+        <div className="absolute top-20 left-10 w-px h-20 bg-gradient-to-b from-secondary/50 to-transparent"></div>
+        <div className="absolute bottom-20 right-10 w-20 h-px bg-gradient-to-r from-accent/50 to-transparent"></div>
+        <div className="absolute top-1/2 right-20 w-2 h-2 border border-highlight/30 rotate-45"></div>
       </div>
     </section>
   );
