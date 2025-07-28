@@ -54,8 +54,7 @@ const Hero = () => {
               size="lg" 
               className="text-lg px-8 py-4 shadow-glow hover:shadow-primary transition-all duration-300"
               onClick={() => {
-                // Link para plataforma - configurado para adicionar link posteriormente
-                window.open('#', '_blank');
+                window.open('https://process-stream-studio.vercel.app/', '_blank');
               }}
             >
               Descubra nossa plataforma
