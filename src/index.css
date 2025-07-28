@@ -66,6 +66,10 @@ All colors MUST be HSL.
     
     /* Professional wave animation */
     --wave-movement: wave-move 6s ease-in-out infinite;
+    
+    /* Data flow animations */
+    --data-flow: data-flow 8s linear infinite;
+    --neural-pulse: neural-pulse 3s ease-in-out infinite;
 
     --radius: 0.5rem;
 
@@ -142,5 +146,54 @@ All colors MUST be HSL.
   .dotted-bg {
     background-image: var(--dotted-pattern);
     background-size: 20px 20px;
+  }
+  
+  /* Animated wave overlays */
+  @keyframes wave-flow {
+    0%, 100% {
+      transform: translateX(-50px) translateY(0px);
+      opacity: 0.3;
+    }
+    50% {
+      transform: translateX(50px) translateY(-20px);
+      opacity: 0.6;
+    }
+  }
+  
+  @keyframes data-stream {
+    0% {
+      transform: translateX(-100%) rotate(0deg);
+      opacity: 0;
+    }
+    50% {
+      opacity: 0.8;
+    }
+    100% {
+      transform: translateX(100vw) rotate(360deg);
+      opacity: 0;
+    }
+  }
+  
+  @keyframes neural-network {
+    0%, 100% {
+      opacity: 0.2;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0.6;
+      transform: scale(1.1);
+    }
+  }
+  
+  .animated-waves {
+    animation: wave-flow 12s ease-in-out infinite;
+  }
+  
+  .data-flow {
+    animation: data-stream 15s linear infinite;
+  }
+  
+  .neural-pulse {
+    animation: neural-network 4s ease-in-out infinite;
   }
 }
