@@ -39,7 +39,7 @@ const Footer = () => {
           <div>
             <h3 className="font-bold mb-4 text-highlight">Contato</h3>
             <ul className="space-y-2 text-sm">
-              <li className="text-primary-foreground/80">📧 jorgeemiliano80@icloud.com</li>
+              <li className="text-primary-foreground/80">📧 atendimento@nordataai.com</li>
               <li className="text-primary-foreground/80">📱 +55 45 9913-58484</li>
               <li className="text-primary-foreground/80">📍 Foz do Iguaçu, Brasil</li>
               <li className="text-primary-foreground/80">📍 CABA, Argentina</li>
