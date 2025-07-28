@@ -137,7 +137,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="font-semibold text-foreground">E-mail</p>
-                    <p className="text-muted-foreground">jorgeemiliano80@icloud.com</p>
+                    <p className="text-muted-foreground">atendimento@nordataai.com</p>
                   </div>
                 </div>
                 
