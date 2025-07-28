@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import heroFuturisticBg from "@/assets/hero-futuristic-bg.jpg";
+import heroAiAnalyticsBg from "@/assets/hero-ai-analytics-bg.jpg";
 
 const Hero = () => {
   return (
@@ -7,7 +7,7 @@ const Hero = () => {
       id="inicio"
       className="min-h-screen flex items-center justify-center relative overflow-hidden bg-primary"
       style={{
-        backgroundImage: `linear-gradient(rgba(15, 15, 50, 0.95), rgba(255, 20, 147, 0.1)), url(${heroFuturisticBg})`,
+        backgroundImage: `linear-gradient(rgba(15, 15, 50, 0.95), rgba(255, 20, 147, 0.1)), url(${heroAiAnalyticsBg})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundAttachment: 'fixed',
