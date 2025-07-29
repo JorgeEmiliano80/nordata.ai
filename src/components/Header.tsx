@@ -23,6 +23,9 @@ const Header = () => {
           <a href="#casos" className="text-primary-foreground hover:text-secondary transition-colors">
             Casos de sucesso
           </a>
+          <a href="/blog" className="text-primary-foreground hover:text-secondary transition-colors">
+            Blog
+          </a>
           <a href="#contato" className="text-primary-foreground hover:text-secondary transition-colors">
             Contato
           </a>
