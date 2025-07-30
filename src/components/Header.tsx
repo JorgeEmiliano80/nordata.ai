@@ -6,11 +6,11 @@ const Header = () => {
       <div className="container mx-auto px-2 h-14 flex items-center justify-between">
         <div className="flex items-center space-x-1">
           <img 
-            src="/lovable-uploads/8b51a508-e5c4-42e6-a6fb-b1824152b97a.png" 
+            src="/lovable-uploads/logo2.png" 
             alt="NORDATA" 
             className="h-10 w-auto"
           />
-          <span className="text-xl font-bold text-primary-foreground">NORDATA</span>
+          <span className="text-xl font-bold text-primary-foreground">NORDATA.AI</span>
         </div>
         
         <nav className="hidden md:flex items-center space-x-8">

@@ -156,7 +156,7 @@ const Contact = () => {
                     <span className="text-primary-foreground text-sm">📍</span>
                   </div>
                   <div>
-                    <p className="font-semibold text-foreground">localização</p>
+                    <p className="font-semibold text-foreground">Localização</p>
                     <p className="text-muted-foreground">Foz do Iguaçu - PR, Brasil /  Ciudad Autónoma de Buenos Aires, Argentina</p>
                   </div>
                 </div>

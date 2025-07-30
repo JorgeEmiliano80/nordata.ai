@@ -41,7 +41,7 @@ const BlogPost = () => {
       if (error) throw error;
       setPost(data);
     } catch (error) {
-      console.error('Error fetching post:', error);
+      console.error('Erro ao buscar o artigo:', error);
     } finally {
       setLoading(false);
     }
@@ -64,7 +64,7 @@ const BlogPost = () => {
       });
     } else {
       navigator.clipboard.writeText(window.location.href);
-      alert('URL copiada al portapapeles');
+      alert('URL copiada');
     }
   };
 
@@ -84,16 +84,16 @@ const BlogPost = () => {
     return (
       <div className="min-h-screen bg-background">
         <Helmet>
-          <title>Artículo no encontrado - NORDATA Blog</title>
+          <title>Artigo não encontrado - NORDATA Blog</title>
           <meta name="description" content="El artículo que buscas no se encuentra disponible." />
         </Helmet>
         <div className="container mx-auto px-4 py-20">
           <div className="text-center">
-            <h1 className="text-4xl font-bold mb-4">Artículo no encontrado</h1>
-            <p className="text-muted-foreground mb-8">Lo sentimos, el artículo que buscas no está disponible.</p>
+            <h1 className="text-4xl font-bold mb-4">Artigo não encontrado</h1>
+            <p className="text-muted-foreground mb-8">Desculpe, o artigo que você procura não está disponível.</p>
             <Button variant="hero" size="lg" asChild>
               <Link to="/blog">
-                Volver al blog
+                Voltar ao blog
               </Link>
             </Button>
           </div>
@@ -107,7 +107,7 @@ const BlogPost = () => {
       <Helmet>
         <title>{post.title} - NORDATA Blog</title>
         <meta name="description" content={post.excerpt} />
-        <meta name="keywords" content={`${post.category}, inteligencia artificial, análisis de datos, NORDATA`} />
+        <meta name="keywords" content={`${post.category}, inteligência artificial, análise de dados, NORDATA`} />
         <meta property="og:title" content={post.title} />
         <meta property="og:description" content={post.excerpt} />
         <meta property="og:type" content="article" />
@@ -125,7 +125,7 @@ const BlogPost = () => {
             <Button variant="ghost" size="sm" asChild className="text-primary-foreground hover:bg-secondary/20">
               <Link to="/blog">
                 <ArrowLeft className="h-4 w-4 mr-2" />
-                Volver al blog
+                Voltar ao blog
               </Link>
             </Button>
             <div className="flex items-center space-x-2">
@@ -138,7 +138,7 @@ const BlogPost = () => {
             </div>
             <Button variant="ghost" size="sm" onClick={handleShare} className="text-primary-foreground hover:bg-secondary/20">
               <Share2 className="h-4 w-4 mr-2" />
-              Compartir
+              Compartilhar
             </Button>
           </div>
         </div>
@@ -197,19 +197,19 @@ const BlogPost = () => {
           <footer className="mt-12 pt-8 border-t border-border/50">
             <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
               <div className="flex items-center space-x-2">
-                <span className="text-sm text-muted-foreground">Categoría:</span>
+                <span className="text-sm text-muted-foreground">Categoria:</span>
                 <Badge variant="outline">{post.category}</Badge>
               </div>
               
               <div className="flex space-x-4">
                 <Button variant="outline" size="sm" asChild>
                   <Link to="/blog">
-                    Ver más artículos
+                    Ver mais artigos
                   </Link>
                 </Button>
                 <Button variant="hero" size="sm" asChild>
                   <Link to="/#contato">
-                    Contactar con nosotros
+                    Falar com a gente
                   </Link>
                 </Button>
               </div>
@@ -222,23 +222,23 @@ const BlogPost = () => {
           <Card className="border-border/50 bg-gradient-accent/10 backdrop-blur-sm">
             <CardHeader>
               <CardTitle className="text-center text-2xl text-primary">
-                ¿Te gustó este artículo?
+                Gostou deste artigo?
               </CardTitle>
             </CardHeader>
             <CardContent className="text-center">
               <p className="text-muted-foreground mb-6">
-                Descubre más contenido sobre inteligencia artificial y análisis de datos, 
-                o contacta con nuestros expertos para conocer cómo podemos ayudarte.
+                Descubra mais conteúdos sobre inteligência artificial e análise de dados,
+                ou fale com nossos especialistas para saber como podemos ajudar sua empresa.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button variant="outline" size="lg" asChild>
                   <Link to="/blog">
-                    Explorar más artículos
+                    Explorar mai artigos
                   </Link>
                 </Button>
                 <Button variant="hero" size="lg" asChild>
                   <Link to="/#contato">
-                    Hablar con un experto
+                    Falar com um especialista
                   </Link>
                 </Button>
               </div>

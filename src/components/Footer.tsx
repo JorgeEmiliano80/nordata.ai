@@ -6,7 +6,7 @@ const Footer = () => {
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
               <img 
-                src="/lovable-uploads/8b51a508-e5c4-42e6-a6fb-b1824152b97a.png" 
+                src="/lovable-uploads/logo2.png" 
                 alt="NORDATA" 
                 className="h-8 w-auto brightness-0 invert"
               />
@@ -49,7 +49,7 @@ const Footer = () => {
         
         <div className="border-t border-primary-foreground/20 mt-8 pt-8 text-center">
           <p className="text-primary-foreground/60 text-sm">
-            © 2025 NORDATA. Todos os direitos reservados. | 
+            © 2025 NORDATA.AI. Todos os direitos reservados. | 
             Impulsionando a inovação com dados e inteligência artificial.
           </p>
         </div>

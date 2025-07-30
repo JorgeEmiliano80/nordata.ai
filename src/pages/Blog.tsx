@@ -65,7 +65,7 @@ const Blog = () => {
     return (
       <div className="min-h-screen bg-background">
         <Helmet>
-          <title>Blog - NORDATA | Noticias y Recursos sobre IA y Análisis de Datos</title>
+          <title>Blog - NORDATA.AI | Noticias y Recursos sobre IA y Análisis de Datos</title>
           <meta name="description" content="Mantente actualizado con las últimas tendencias en inteligencia artificial, análisis de datos y transformación digital con el blog de NORDATA." />
         </Helmet>
         <div className="container mx-auto px-4 py-20">
@@ -80,10 +80,10 @@ const Blog = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Blog - NORDATA | Noticias y Recursos sobre IA y Análisis de Datos</title>
+        <title>Blog - NORDATA.AI | Noticias y Recursos sobre IA y Análisis de Datos</title>
         <meta name="description" content="Mantente actualizado con las últimas tendencias en inteligencia artificial, análisis de datos y transformación digital con el blog de NORDATA." />
         <meta name="keywords" content="blog, inteligencia artificial, análisis de datos, transformación digital, tecnología, innovación" />
-        <meta property="og:title" content="Blog - NORDATA | Noticias y Recursos sobre IA y Análisis de Datos" />
+        <meta property="og:title" content="Blog - NORDATA.AI | Noticias y Recursos sobre IA y Análisis de Datos" />
         <meta property="og:description" content="Mantente actualizado con las últimas tendencias en inteligencia artificial, análisis de datos y transformación digital." />
         <meta property="og:type" content="website" />
         <link rel="canonical" href="/blog" />
@@ -97,13 +97,13 @@ const Blog = () => {
               <Button variant="ghost" size="sm" asChild className="text-primary-foreground hover:bg-secondary/20">
                 <Link to="/">
                   <ArrowLeft className="h-4 w-4 mr-2" />
-                  Volver al inicio
+                  Voltar ao inicio
                 </Link>
               </Button>
             </div>
             <div className="flex items-center space-x-2">
               <img 
-                src="/lovable-uploads/8b51a508-e5c4-42e6-a6fb-b1824152b97a.png" 
+                src="/lovable-uploads/logo2.png" 
                 alt="NORDATA" 
                 className="h-8 w-auto"
               />
@@ -117,11 +117,11 @@ const Blog = () => {
         {/* Hero Section */}
         <section className="text-center mb-16">
           <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-            Blog NORDATA
+            Nordata.Blog
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
-            Descubre las últimas tendencias en inteligencia artificial, análisis de datos 
-            y transformación digital. Mantente al día con insights expertos y recursos educativos.
+            Descubra as últimas tendências em inteligência artificial, análise de dados
+            e transformação digital. Mantenha-se atualizado com insights especializados e recursos educativos.
           </p>
         </section>
 
@@ -145,7 +145,7 @@ const Blog = () => {
         {/* Featured Post */}
         {featuredPost && selectedCategory === "all" && (
           <section className="mb-16">
-            <h2 className="text-3xl font-bold mb-8 text-center">Artículo Destacado</h2>
+            <h2 className="text-3xl font-bold mb-8 text-center">Artigo em Destaque</h2>
             <Card className="border-border/50 bg-card/50 backdrop-blur-sm hover:shadow-primary transition-all duration-300">
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="order-2 md:order-1">
@@ -171,7 +171,7 @@ const Blog = () => {
                       </div>
                       <Button variant="hero" size="lg" asChild>
                         <Link to={`/blog/${featuredPost.id}`}>
-                          Leer artículo
+                          Ler artigo
                         </Link>
                       </Button>
                     </div>
@@ -194,13 +194,13 @@ const Blog = () => {
         {/* Regular Posts Grid */}
         <section>
           <h2 className="text-3xl font-bold mb-8 text-center">
-            {selectedCategory === "all" ? "Últimos Artículos" : `Artículos de ${selectedCategory}`}
+            {selectedCategory === "all" ? "Últimos artigos" : `Artigos sobre ${selectedCategory}`}
           </h2>
           
           {filteredPosts.length === 0 ? (
             <div className="text-center py-12">
               <p className="text-muted-foreground text-lg">
-                No hay artículos disponibles en esta categoría.
+                Não há artigos disponíveis nesta categoria.
               </p>
               <Button 
                 variant="outline" 
@@ -208,7 +208,7 @@ const Blog = () => {
                 onClick={() => setSelectedCategory("all")}
                 className="mt-4"
               >
-                Ver todos los artículos
+                Ver todos os artigos
               </Button>
             </div>
           ) : (
@@ -247,7 +247,7 @@ const Blog = () => {
                       </div>
                       <Button variant="outline" size="sm" asChild>
                         <Link to={`/blog/${post.id}`}>
-                          Leer más
+                          Ler mais
                         </Link>
                       </Button>
                     </div>
@@ -263,15 +263,15 @@ const Blog = () => {
           <Card className="border-border/50 bg-gradient-primary/10 backdrop-blur-sm">
             <CardContent className="py-12">
               <h3 className="text-3xl font-bold mb-4 text-primary">
-                ¿Quieres mantenerte actualizado?
+                Quer se manter atualizado?
               </h3>
               <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-                Suscríbete a nuestras actualizaciones y recibe los últimos artículos sobre 
-                inteligencia artificial y análisis de datos directamente en tu bandeja de entrada.
+                Assine nossas atualizações e receba os últimos artigos sobre
+                inteligência artificial e análise de dados diretamente na sua caixa de entrada.'
               </p>
               <Button variant="hero" size="lg" asChild>
                 <Link to="/#contato">
-                  Contactar con nosotros
+                  Entrar em contato
                 </Link>
               </Button>
             </CardContent>

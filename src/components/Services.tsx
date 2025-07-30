@@ -6,7 +6,7 @@ import mlIcon from "@/assets/ml-icon.jpg";
 const Services = () => {
   const platformContent = {
     title: "Nossa plataforma e como geramos valor",
-    description: "Nossa plataforma de processamento de dados e inteligência artificial foi concebida para entregar valor de ponta a ponta. Projetamos algoritmos e ferramentas de IA que revelam insights acionáveis, aprimoram decisões e criam novas fontes de valor – tudo com simplicidade e segurança de ponta a ponta.",
+    description: "Nossa plataforma de processamento de dados e inteligência artificial foi concebida para entregar valor. Projetamos algoritmos e ferramentas de IA que revelam insights acionáveis, aprimoram decisões e criam novas fontes de valor – tudo com simplicidade e segurança de ponta a ponta.",
     details: "Em termos práticos, isso significa que a Nordata cuida de todo o fluxo de dados: desde a coleta e integração de diferentes fontes, passando pelo processamento e análise avançada (incluindo modelos de machine learning), até a visualização de resultados em painéis intuitivos.",
     advantages: "Privilegiamos a simplicidade de uso – mesmo organizações sem grande equipe técnica podem se beneficiar – e a segurança dos dados, assegurando compliance e privacidade em cada etapa. Nosso diferencial está em tornar a IA acessível: com módulos prontos e personalizáveis, as empresas conseguem rapidamente implantar soluções de análise preditiva, detecção de anomalias, otimização de processos e muito mais, sem precisar reinventar a roda.",
     results: "Tudo isso sustentado por nossa experiência e DNA inovador, garantindo que as soluções não sejam apenas tecnicamente robustas, mas também alinhadas aos objetivos de negócio de cada cliente. O resultado? Decisões melhor informadas, redução de custos, aumento de receitas e identificação de oportunidades antes invisíveis – enfim, dados transformados em vantagens competitivas para nossos clientes."
@@ -56,7 +56,7 @@ const Services = () => {
               Casos de sucesso de clientes
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Para ilustrar o impacto da Nordata, destacamos alguns clientes que alavancaram seus dados com nossa plataforma:
+              Para ilustrar o impacto da Nordata.AI, destacamos alguns clientes que alavancaram seus dados com nossa plataforma:
             </p>
           </div>
           

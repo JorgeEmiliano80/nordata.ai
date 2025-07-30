@@ -8,36 +8,36 @@ import {
 const FAQ = () => {
   const faqs = [
     {
-      question: "¿Por qué es importante trabajar con datos en mi empresa?",
-      answer: "Los datos son el nuevo petróleo de la era digital. Permiten tomar decisiones informadas, identificar patrones ocultos, optimizar procesos y crear ventajas competitivas. Las empresas que aprovechan sus datos tienen 5 veces más probabilidades de tomar decisiones más rápidas que sus competidores."
+      question: "Por que é importante trabalhar com dados na minha empresa?",
+      answer: "Os dados são o novo petróleo da era digital. Eles permitem tomar decisões informadas, identificar padrões ocultos. otimizar processos e criar vantagens competitiva. As empresas que aproveitam seus dados têm 5 vezes mais chances de tomar decisões mais rápidas do que seus concorrentes."
     },
     {
-      question: "¿Cómo puede la inteligencia artificial transformar mi negocio?",
-      answer: "La IA puede automatizar tareas repetitivas, mejorar la experiencia del cliente con chatbots inteligentes, predecir tendencias de mercado, optimizar cadenas de suministro y detectar fraudes. Esto se traduce en reducción de costos, aumento de eficiencia y nuevas oportunidades de ingresos."
+      question: "Como a inteligência artificial pode transformar meu negócio?",
+      answer: "A IA pode automatizar tarefas repetitivas, melhorar a experiência do cliente com chatbots inteligentes, prever tendências de mercado, otimizar cadeias de suprimentos e detectar fraudes. Isso se traduz em redução de custos, aumento de eficiência e novas oportunidades de receita."
     },
     {
-      question: "¿Qué tipos de datos puedo analizar en mi empresa?",
-      answer: "Prácticamente todos: ventas, comportamiento de clientes, operaciones, finanzas, recursos humanos, marketing digital, redes sociales, sensores IoT, logs de sistemas, y más. Cada área de tu negocio genera datos valiosos que pueden convertirse en insights accionables."
+      question: "Quais tipos de dados posso analisar na minha empresa?",
+      answer: "Praticamente todos: vendas, comportamento dos clientes, operações, finanças, recursos humanos, marketing digital, redes sociais, sensores IoT, logs de sistemas e muito mais. Cada área do seu negócio gera dados valiosos que podem ser transformados em insights acionáveis."
     },
     {
-      question: "¿Es costoso implementar soluciones de IA y análisis de datos?",
-      answer: "El costo varía según la complejidad, pero el ROI suele ser muy alto. Existen soluciones escalables desde pequeñas empresas hasta corporaciones. La inversión se recupera típicamente en 6-18 meses a través de eficiencias operativas y nuevas oportunidades de negocio."
+      question: "É caro implementar soluções de IA e análise de dados?",
+      answer: "O custo varia conforme a complexidade, mas o retorno sobre o investimento geralmente é muito alto. Existem soluções escaláveis para pequenas empresas até grandes corporações. O investimento costuma ser recuperado em 6 a 18 meses por meio de eficiências operacionais e novas oportunidades de negócio."
     },
     {
-      question: "¿Necesito tener conocimientos técnicos para usar estas soluciones?",
-      answer: "No necesariamente. Desarrollamos interfaces intuitivas y dashboards fáciles de usar. Además, proporcionamos capacitación y soporte técnico. Nuestro objetivo es que cualquier usuario de negocio pueda aprovechar el poder de los datos sin ser un experto técnico."
+      question: "Preciso ter conhecimentos técnicos para usar essas soluções?",
+      answer: "Não necessariamente. Desenvolvemos interfaces intuitivas e dashboards fáceis de usar. Além disso, fornecemos treinamento e suporte técnico. Nosso objetivo é que qualquer usuário de negócio possa aproveitar o poder dos dados sem ser um especialista técnico."
     },
     {
-      question: "¿Cómo garantizan la seguridad y privacidad de mis datos?",
-      answer: "Implementamos los más altos estándares de seguridad: encriptación end-to-end, cumplimiento con GDPR/LGPD, auditorías regulares, acceso basado en roles y backups seguros. Tus datos están protegidos con tecnología de nivel bancario."
+      question: "Como vocês garantem a segurança e privacidade dos meus dados?",
+      answer: "Implementamos os mais altos padrões de segurança: criptografia de ponta a ponta, conformidade com GDPR/LGPD, auditorias regulares, acesso baseado em papéis e backups seguros. Seus dados estão protegidos com tecnologia de nível bancário."
     },
     {
-      question: "¿Cuánto tiempo toma ver resultados con análisis de datos?",
-      answer: "Los primeros insights pueden aparecer en días o semanas, dependiendo de la calidad y volumen de datos. Resultados significativos en procesos de negocio suelen verse en 1-3 meses. La IA mejora continuamente con más datos y tiempo."
+      question: "Quanto tempo leva para ver resultados com análise de dados?",
+      answer: "Os primeiros insights podem aparecer em dias ou semanas, dependendo da qualidade e volume de dados. Resultados significativos nos processos de negócio geralmente aparecem em 1 a 3 meses. A IA melhora continuamente com mais dados e tempo."
     },
     {
-      question: "¿Qué diferencia a NORDATA de otras empresas de análisis de datos?",
-      answer: "Nos especializamos 100% en datos e IA con enfoque en resultados de negocio tangibles. Ofrecemos soluciones personalizadas, no productos genéricos. Nuestro equipo combina expertise técnico profundo con comprensión de negocio, garantizando implementaciones exitosas."
+      question: "O que diferencia a NORDATA.AI de outras empresas de análise de dados?",
+      answer: "Somos 100% especializados em dados e IA, con foco em resultados de negócios tangíveis. Oferecemos soluções personalizadas, não produtos genéricos. Nossa equipe combina expertise técnico profundo com conhecimento de negócios, garantindo implementações bem-sucedidas."
     }
   ];
 
@@ -46,13 +46,13 @@ const FAQ = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-            Preguntas{" "}
+            Perguntas{" "}
             <span className="bg-gradient-to-r from-secondary to-highlight bg-clip-text text-transparent">
-              Frecuentes
+              Frequentes
             </span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Respondemos las dudas más comunes sobre la importancia de los datos y la inteligencia artificial en tu negocio
+            Respondemos as dúvidas mais comuns sobre a importância dos dados e da inteligência artificial no seu negócio
           </p>
         </div>
 
@@ -80,13 +80,13 @@ const FAQ = () => {
         {/* Call to action */}
         <div className="text-center mt-12">
           <p className="text-lg text-muted-foreground mb-4">
-            ¿Tienes más preguntas sobre cómo podemos ayudarte?
+            Tem mais perguntas sobre como podemos ajudar você?
           </p>
           <a 
             href="#contato" 
             className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors font-medium"
           >
-            Contacta con nuestros expertos
+            Fale com nossos especialistas
           </a>
         </div>
       </div>
