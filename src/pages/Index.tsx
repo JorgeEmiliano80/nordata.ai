@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+import DatabricksPartnership from "@/components/Databricks";
 import Services from "@/components/Services";
 import About from "@/components/About";
 import FAQ from "@/components/FAQ";
@@ -11,6 +12,7 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <Header />
       <Hero />
+      <DatabricksPartnership />
       <Services />
       <About />
       <FAQ />
