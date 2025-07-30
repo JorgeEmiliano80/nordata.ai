@@ -96,6 +96,10 @@ export default {
 						height: 'var(--radix-accordion-content-height)'
 					}
 				},
+				"scroll-up": {
+					"0%": { transform: "translateY(0%)" },
+					"100%": { transform: "translateY(-50%)" },
+				},
 				'accordion-up': {
 					from: {
 						height: 'var(--radix-accordion-content-height)'
@@ -118,12 +122,14 @@ export default {
 				}
 			},
 			animation: {
+				'scroll-up': "scroll-up 10s linear infinite",
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'float': 'float 6s ease-in-out infinite',
 				'pulse-glow': 'pulse-glow 2s ease-in-out infinite',
 				'slide-in': 'slide-in 0.6s ease-out'
 			}
+
 		}
 	},
 	plugins: [require("tailwindcss-animate")],
