@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import DatabricksPartnership from "@/components/Databricks";
 import Services from "@/components/Services";
+import Clients from "@/components/Clients";
 import About from "@/components/About";
 import FAQ from "@/components/FAQ";
 import Contact from "@/components/Contact";
@@ -14,6 +15,7 @@ const Index = () => {
       <Hero />
       <DatabricksPartnership />
       <Services />
+      <Clients />
       <About />
       <FAQ />
       <Contact />
