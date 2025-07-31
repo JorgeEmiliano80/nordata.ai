@@ -47,7 +47,7 @@ This project is built with:
 - Tailwind CSS
 
 
-Yes, you can!
+Yes, you can!!
 
 To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
 
