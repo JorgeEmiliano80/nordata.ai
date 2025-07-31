@@ -21,7 +21,7 @@ const Header = () => {
             Plataforma
           </a>
           <a href="/servicios" className="text-primary-foreground hover:text-secondary transition-colors">
-            Servicios
+            Serviços
           </a>
           <a href="#casos" className="text-primary-foreground hover:text-secondary transition-colors">
             Casos de sucesso

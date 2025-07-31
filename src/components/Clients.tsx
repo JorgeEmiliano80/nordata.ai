@@ -2,10 +2,10 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const clients = [
   {
-    name: "SCAP Analysis",
+    name: "Scapder Analysis",
     logo: "/lovable-uploads/ebb4574d-71ea-4b2f-829f-a65e83913fd8.png",
     description: "Uma empresa com referência internacional em soluções analíticas, inteligência de dados e capacitação profissional.",
-    details: "A SCAP Analysis atua há mais de 10 anos com projetos de alto nível em toda a América Latina, oferecendo soluções completas em:",
+    details: "A Scapder Analysis atua há mais de 10 anos com projetos de alto nível em toda a América Latina, oferecendo soluções completas em:",
     services: [
       "Governança de dados e arquitetura escalável",
       "Modelos de Machine Learning", 
@@ -20,10 +20,10 @@ const Clients = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-            Nossos Clientes e Parceiros
+            Parceiros comerciais
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Trabalhamos com empresas líderes que confiam em nossa expertise para transformar seus dados em vantagem competitiva.
+            Trabalhamos com empresas que compartilham nossa visão de inovação e uso inteligente de dados para gerar valor real.
           </p>
         </div>
 

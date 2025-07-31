@@ -32,98 +32,98 @@ interface Service {
 const services: Service[] = [
   {
     id: "data-analytics",
-    title: "Data Analytics & Visualization",
-    description: "Transform raw data into meaningful insights with interactive dashboards and comprehensive reports.",
-    badge: "Analytics",
+    title: "Análise e visualização de dados",
+    description: "Transforme dados brutos em insights valiosos com dashboards interativos e relatórios completos.",
+    badge: "Análise de dados",
     badgeVariant: "default",
     icon: BarChart3,
     features: [
-      "Interactive dashboard development",
-      "Statistical analysis and reporting", 
-      "Data visualization and storytelling",
-      "KPI tracking and monitoring"
+      "Desenvolvimento de dashboards interativos",
+      "Análise estatística e geração de relatórios",
+      "Visualização de dados e storytelling",
+      "Acompanhamento de KPIs"
     ],
-    startingPrice: "Upon request",
+    startingPrice: "Sob consulta",
     timeline: "3-5 weeks"
   },
   {
-    id: "machine-learning",
-    title: "Machine Learning Solutions", 
-    description: "Custom ML models for prediction, classification, and recommendation systems tailored to your business needs.",
+    id: "Machine-learning",
+    title: "Soluções de machine learning", 
+    description: "Modelos personalizados de ML para previsão, classificação e sistemas de recomedação adaptados ao seu negócio.",
     badge: "Machine Learning",
     badgeVariant: "secondary",
     icon: Brain,
     features: [
-      "Predictive modeling and forecasting",
-      "Classification and clustering algorithms",
-      "Recommendation systems",
-      "Model deployment and monitoring"
+      "Modelagem preditiva e previsão",
+      "Algoritmos de classificação e clustering",
+      "Sistemas de recomendação",
+      "Implantação e monitoramento de modelos"
     ],
-    startingPrice: "Upon request",
-    timeline: "Upon request"
+    startingPrice: "Sob consulta",
+    timeline: "Sob consulta"
   },
   {
     id: "business-intelligence",
     title: "Business Intelligence",
-    description: "Strategic insights through advanced analytics to drive informed decision-making and business growth.",
-    badge: "Analytics", 
+    description: "Insights estratégicos por meio de análises avançadas para impulsionar decisões informadas e crescimento empresarial.",
+    badge: "Análise de dados", 
     badgeVariant: "default",
     icon: TrendingUp,
     features: [
-      "Market analysis and research",
-      "Customer segmentation strategies",
-      "Performance optimization insights",
-      "Strategic planning support"
+      "Análise e pesquisa de mercado",
+      "Estratégias de segmentação de clientes",
+      "Otimização de desempenho",
+      "Suporte ao planejamento estratégico"
     ],
-    startingPrice: "Upon request",
+    startingPrice: "Sob consulta",
     timeline: "4-8 weeks"
   },
   {
     id: "data-engineering",
-    title: "Data Engineering & Pipelines",
-    description: "Robust data infrastructure and automated pipelines for efficient data processing and management.",
-    badge: "Automation",
+    title: "Engenharia de dados e pipelines",
+    description: "Infraestructura de dados robusta e pipelines automatizados para processamento e gerenciamento eficiente de dados.",
+    badge: "Automação",
     badgeVariant: "outline",
     icon: Database,
     features: [
-      "ETL pipeline development",
-      "Data warehouse design",
-      "Real-time data processing",
-      "Cloud infrastructure setup"
+      "Desenvolvimento de pipelines ETL",
+      "Projeto de Data Warehouse",
+      "Processamento de dados em tempo real",
+      "Configuração de infraestrutura em nuvem"
     ],
-    startingPrice: "Upon request",
+    startingPrice: "Sob consulta",
     timeline: "6-10 weeks"
   },
   {
     id: "data-strategy",
-    title: "Data Strategy Consulting",
-    description: "Expert guidance on data strategy, technology selection, and implementation roadmaps.",
-    badge: "Consulting",
+    title: "Consultoria em Estratégia de Dados",
+    description: "Orientação especializada em estratégia de dados, seleção de tecnologia e planos de implementação.",
+    badge: "Consultoria",
     badgeVariant: "secondary",
     icon: Users,
     features: [
-      "Data strategy development", 
-      "Technology assessment and selection",
-      "Implementation roadmap planning",
-      "Change management support"
+      "Desenvolvimento de estratégia de dados", 
+      "Avaliação e escolha de tecnologia",
+      "Planejamento da implementação",
+      "Suporte à gestão da mudança"
     ],
-    startingPrice: "Upon request",
+    startingPrice: "Sob consulta",
     timeline: "2-4 weeks"
   },
   {
     id: "process-automation",
-    title: "Process Automation",
-    description: "Automate repetitive tasks and workflows using AI and machine learning technologies.",
-    badge: "Automation",
+    title: "Automação de processos",
+    description: "Automatize tarefas repetitivas e fluxos de trabalho com tecnologias de IA e machine learning.",
+    badge: "Automação",
     badgeVariant: "outline", 
     icon: Zap,
     features: [
-      "Workflow automation design",
-      "AI-powered process optimization",
-      "Integration with existing systems",
-      "Performance monitoring and optimization"
+      "Design de automação de fluxos",
+      "Otimização de processos com IA",
+      "Integração com sistemas existentes",
+      "Monitoramento de desempenho"
     ],
-    startingPrice: "Upon request",
+    startingPrice: "Sob consulta",
     timeline: "4-6 weeks"
   }
 ];
@@ -140,13 +140,13 @@ const Services = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Servicios - NORDATA.AI | Soluciones de Datos e IA</title>
-        <meta name="description" content="Descubre nuestros servicios especializados en análisis de datos, machine learning, business intelligence y automatización de procesos." />
-        <meta name="keywords" content="servicios, análisis de datos, machine learning, business intelligence, automatización, consultoría" />
-        <meta property="og:title" content="Servicios - NORDATA.AI | Soluciones de Datos e IA" />
-        <meta property="og:description" content="Servicios especializados en transformación digital, análisis de datos e inteligencia artificial." />
+        <title>Serviços - NORDATA.AI | Soluções em dados e IA</title>
+        <meta name="description" content="Descubra nossos serviços especializados em análise de dados, machine learning, business intelligence e automação de processos." />
+        <meta name="keywords" content="serviços, análise de dados, machine learning, business intelligence, automação, consultoria" />
+        <meta property="og:title" content="Serviços - NORDATA.AI | Soluções em dados e IA" />
+        <meta property="og:description" content="Serviços especializados em transformação digital, análise de dados e inteligência artificial." />
         <meta property="og:type" content="website" />
-        <link rel="canonical" href="/servicios" />
+        <link rel="canonical" href="/serviços" />
       </Helmet>
 
       {/* Header with back button */}
@@ -157,7 +157,7 @@ const Services = () => {
               <Button variant="ghost" size="sm" asChild className="text-primary-foreground hover:bg-secondary/20">
                 <Link to="/">
                   <ArrowLeft className="h-4 w-4 mr-2" />
-                  Volver al inicio
+                  Voltar ao inicio
                 </Link>
               </Button>
             </div>
@@ -177,11 +177,11 @@ const Services = () => {
         {/* Hero Section */}
         <section className="text-center mb-16">
           <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-            Nuestros Servicios
+            Nossos Serviços
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
-            Soluciones integrales de datos e inteligencia artificial diseñadas para impulsar 
-            el crecimiento y la innovación en su empresa.
+            Soluções integradas de dados e inteligência artificial projetadas para impulsionar
+            o crescimento e a inovação da sua empresa.
           </p>
         </section>
 
@@ -240,7 +240,7 @@ const Services = () => {
                       <div className="flex items-center justify-between text-sm">
                         <div className="flex items-center space-x-2">
                           <DollarSign className="h-4 w-4 text-muted-foreground" />
-                          <span className="font-medium">Precio inicial:</span>
+                          <span className="font-medium">Preço inicial:</span>
                         </div>
                         <span className="text-primary font-medium">{service.startingPrice}</span>
                       </div>
@@ -248,14 +248,14 @@ const Services = () => {
                       <div className="flex items-center justify-between text-sm">
                         <div className="flex items-center space-x-2">
                           <Clock className="h-4 w-4 text-muted-foreground" />
-                          <span className="font-medium">Timeline:</span>
+                          <span className="font-medium">Prazo estimado:</span>
                         </div>
                         <span className="text-muted-foreground">{service.timeline}</span>
                       </div>
                       
                       <Button variant="outline" size="sm" className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors" asChild>
                         <Link to="/#contato">
-                          Solicitar Cotización
+                          Solicitar orçamento
                         </Link>
                       </Button>
                     </div>
@@ -271,21 +271,16 @@ const Services = () => {
           <Card className="border-border/50 bg-gradient-primary/10 backdrop-blur-sm">
             <CardContent className="py-12">
               <h3 className="text-3xl font-bold mb-4 text-primary">
-                ¿Listo para transformar su negocio con datos?
+                Pronto para transformar seu negócio com dados?
               </h3>
               <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-                Nuestro equipo de expertos está aquí para ayudarle a diseñar la solución 
-                perfecta para sus necesidades específicas.
+                Nossa equipe de especialistas está pronta para ajudá-lo a projetar a solução
+                ideal para as suas necessidades espcíficas.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button variant="hero" size="lg" asChild>
                   <Link to="/#contato">
-                    Hablar con un experto
-                  </Link>
-                </Button>
-                <Button variant="outline" size="lg" asChild>
-                  <Link to="/blog">
-                    Ver casos de estudio
+                    Falar com um especialista
                   </Link>
                 </Button>
               </div>

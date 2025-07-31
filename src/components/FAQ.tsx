@@ -48,7 +48,7 @@ const FAQ = () => {
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
             Perguntas{" "}
             <span className="bg-gradient-to-r from-secondary to-highlight bg-clip-text text-transparent">
-              Frequentes
+              frequentes
             </span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">

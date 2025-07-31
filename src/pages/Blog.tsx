@@ -80,7 +80,7 @@ const Blog = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Blog - NORDATA.AI | Noticias y Recursos sobre IA y Análisis de Datos</title>
+        <title>Blog - NORDATA.AI | Notícias e recursos sobre IA e análise de dados</title>
         <meta name="description" content="Mantente actualizado con las últimas tendencias en inteligencia artificial, análisis de datos y transformación digital con el blog de NORDATA." />
         <meta name="keywords" content="blog, inteligencia artificial, análisis de datos, transformación digital, tecnología, innovación" />
         <meta property="og:title" content="Blog - NORDATA.AI | Noticias y Recursos sobre IA y Análisis de Datos" />
@@ -267,7 +267,7 @@ const Blog = () => {
               </h3>
               <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
                 Assine nossas atualizações e receba os últimos artigos sobre
-                inteligência artificial e análise de dados diretamente na sua caixa de entrada.'
+                inteligência artificial e análise de dados diretamente na sua caixa de entrada.
               </p>
               <Button variant="hero" size="lg" asChild>
                 <Link to="/#contato">

@@ -53,7 +53,7 @@ const Services = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-              Casos de sucesso de clientes
+              Casos de sucesso
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               Para ilustrar o impacto da Nordata.AI, destacamos alguns clientes que alavancaram seus dados com nossa plataforma:
