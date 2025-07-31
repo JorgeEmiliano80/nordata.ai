@@ -36,7 +36,7 @@ const BlogPost = () => {
         .from('blog_posts')
         .select('*')
         .eq('id', postId)
-        .single();
+        .maybeSingle();
 
       if (error) throw error;
       setPost(data);
@@ -233,7 +233,7 @@ const BlogPost = () => {
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button variant="outline" size="lg" asChild>
                   <Link to="/blog">
-                    Explorar mai artigos
+                    Explorar mais artigos
                   </Link>
                 </Button>
                 <Button variant="hero" size="lg" asChild>
