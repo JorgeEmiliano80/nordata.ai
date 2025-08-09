@@ -122,7 +122,7 @@ export default {
 				}
 			},
 			animation: {
-				'scroll-up': "scroll-up 10s linear infinite",
+				'scroll-up': "scroll-up 30s linear infinite",
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'float': 'float 6s ease-in-out infinite',
